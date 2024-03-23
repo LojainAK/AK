@@ -10,4 +10,7 @@ pipeline {
         }
         // Add more stages as needed, e.g., Test, Deploy
     }
+<<<<<<< HEAD
+}
+=======
 }
