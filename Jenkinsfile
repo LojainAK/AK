@@ -1,14 +1,15 @@
 pipeline {
-    agent any
-    
-    stages {
-        stage('Build') {
-            steps {
-                // Add commands to build your application
-                sh 'python app.py'
-            }
-        }
-        // Add more stages as needed, e.g., Test, Deploy
+  agent any
+  stages {
+    stage('version') {
+      steps {
+        sh 'python3 --version'
+      }
     }
-
+    stage('hello') {
+      steps {
+        sh 'python3 app.py'
+      }
+    }
+  }
 }
