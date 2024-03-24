@@ -1,10 +1,12 @@
 pipeline {
-  agent any
-  stages {
-    stage('hello') {
-      steps {
-        sh 'python app.py'
-      }
+    agent any
+    
+    stages {
+        stage('Print Hello World') {
+            steps {
+                echo 'Hello, world!'
+            }
+        }
+        // Add more stages as needed
     }
-  }
 }
