@@ -2,11 +2,20 @@ pipeline {
     agent any
     
     stages {
-        stage('Print Hello World') {
+        stage('Clone Repository') {
             steps {
-                echo 'Hello, world!'
+                git 'https://github.com/Spring-3/AK.git'
             }
         }
-        // Add more stages as needed
+        
+        stage('Execute Python Program') {
+            steps {
+                // Navigate to the directory containing app.py
+                'dir('C:\\Users\\Yasir\\Desktop')' {
+                    // Execute the Python program
+                    sh 'python app.py'
+                }
+            }
+        }
     }
 }
