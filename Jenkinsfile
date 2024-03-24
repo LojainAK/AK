@@ -11,7 +11,7 @@ pipeline {
         stage('Execute Python Program') {
             steps {
                 // Navigate to the directory containing app.py
-                'dir('C:\\Users\\Yasir\\Desktop')' {
+                dir('C:\\Users\\Yasir\\Desktop') {
                     // Execute the Python program
                     sh 'python app.py'
                 }
