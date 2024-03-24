@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout code from the Git repository
-                git 'https://github.com/Season-3/AK.git'
+                git 'https://github.com/Spring-3/AK.git'
             }
         }
         stage('Execute Python Script') {
