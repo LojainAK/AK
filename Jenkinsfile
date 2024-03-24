@@ -16,6 +16,6 @@ pipeline {
                  bat 'python app.py'
             }
         }
-        // Add more stages as needed
+        // Add more stages as needediu
     }
 }
