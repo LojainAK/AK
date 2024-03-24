@@ -11,9 +11,9 @@ pipeline {
         stage('Execute Python Script') {
             steps {
                 // Run the Python script
-                sh 'python app.py'
+                //sh 'python app.py'
                 // Or, if you are on Windows
-                // bat 'python app.py'
+                 bat 'python app.py'
             }
         }
         // Add more stages as needed
